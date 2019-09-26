@@ -12,6 +12,7 @@ const fetchBreedDescription = function(breed, callback) {
         callback(null, data[0].description);
       } else {
         console.log('Breed does not exist... yet. Godspeed.');
+        callback('notBreed.exe', null);
       }
     }
   });
